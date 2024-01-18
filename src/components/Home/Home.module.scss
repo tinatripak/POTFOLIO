@@ -4,8 +4,9 @@
       padding-top: 25vh;
 
 
-      @include breakpoint(bigScreen) {
-            padding-top: 10vh;
+      @include breakpoint(smallScreen) {
+            padding-top: 15vh;
+
       }
 
       .main{
