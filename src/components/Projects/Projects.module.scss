@@ -1,0 +1,152 @@
+@import "../../styles/variables.scss";
+
+.projects {
+  padding-top: 15vh;
+
+  @include breakpoint(bigScreen) {
+    padding-top: 9vh;
+    }
+  p.heading {
+    font-family: $IslandMoments;
+    font-size: 35px;
+    text-align: center;
+  }
+  .gridProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    padding: 2rem 5rem;
+    gap: 10vw;
+
+    @include breakpoint(bigScreen) {
+      gap: 5vw;
+      padding: 1rem 3rem;
+    }
+
+    @include breakpoint(smallScreen) {
+      display: block;
+    }
+    .secondProject, .fourthProject  {
+      @include breakpoint(smallScreen) {
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+        @include breakpoint(smallScreen) {
+          order: 1;
+        }
+      }
+      .description {
+        @include breakpoint(smallScreen) {
+          order: 2;
+        }
+      }
+      .photoBlock{
+            @include breakpoint(smallScreen) {
+              order: 3;
+            }
+          }
+    }
+
+    .firstProject, .thirdProject  {
+      @include breakpoint(smallScreen) {
+        display: flex;
+        flex-direction: column;
+      }
+      .title {
+            @include breakpoint(smallScreen) {
+              order: 1;
+            }
+          }
+      .description {
+        @include breakpoint(smallScreen) {
+          order: 2;
+        }
+      }
+      .photoBlock {
+        @include breakpoint(smallScreen) {
+          order: 3;
+        }
+      }
+    }
+
+    .project {
+      .title {
+        font-family: $Julius;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        @include breakpoint(smallScreen) {
+            margin-top: 2vh;
+        }
+      }
+      .description {
+        font-family: $Junge;
+        font-size: 18px;
+
+        span {
+          font-family: $Judson;
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+      img {
+        border-radius: $photoBorderRadius;
+        width: 40vw;
+        margin-top: 3vh;
+        @include breakpoint(smallScreen) {
+          width: 100%;
+        }
+      }
+      .photoBlock {
+        z-index: 1;
+        position: relative;
+        @include breakpoint(smallScreen) {
+          position: static;
+        }
+        .buttons {
+          position: absolute;
+          bottom: 30px;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          @include breakpoint(smallScreen) {
+            bottom: 0px;
+            position: static;
+          }
+
+          a {
+            color: $black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          gap: 1vw;
+
+          .liveCodeButton {
+            width: 120px;
+            height: 40px;
+            background-color: $white;
+            border: 1px solid $black;
+            border-radius: $buttonBorderRadius;
+            font-size: 14px;
+            font-family: $Julius;
+            padding: 1rem 1rem;
+          }
+          .demoButton {
+            width: 120px;
+            height: 40px;
+            color: $white;
+            background-color: $black;
+            border: 1px solid $white;
+            border-radius: $buttonBorderRadius;
+            font-size: 14px;
+            font-family: $Julius;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.home{
+      padding-top: 25vh;
+
+
+      @include breakpoint(bigScreen) {
+            padding-top: 10vh;
+      }
+
+      .main{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: end;
+
+            @include breakpoint(bigScreen) {
+                  display: block;
+            }
+
+            .text{
+                  display: flex;
+                  flex-direction: column;
+                  height: 100%;
+                  justify-content: space-around;
+                  text-align: center;
+                  text-transform: uppercase;
+
+                  .fullName{
+                        font-size: 6vw;
+                        font-family: $Arapey;
+                        width: 60%;
+                        margin: 0 auto;
+                  }
+                  .position{
+                        font-size: 16px;
+                  }
+            }
+            .photo{
+                  img{
+                        width: 30vw;
+                  
+                        @include breakpoint(bigScreen) {
+                              width: 50vw;
+                              display: flex;
+                              margin: 0 auto;
+                        }
+
+                        @include breakpoint(smallScreen) {
+                              width: 85vw;
+                        }
+                  }
+            }
+      }
+}

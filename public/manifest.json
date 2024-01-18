@@ -1,0 +1,96 @@
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/myPhoto.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/firstProject.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/secondProject.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/thirdProject.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/fourthProject.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/gmailIcon.jpeg",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "images/resume.png",
+      "type": "image/png"
+    },
+
+
+    {
+      "src": "images/basicIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/boostrapIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/expressIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/figmaIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/gmailIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/mongoIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/nodeIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/postmanIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/reactIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/scssIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/tailwindIcon.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/womanWithComputer.png",
+      "type": "image/png"
+    },
+    {
+      "src": "Kristina_Tripak_CV.pdf",
+      "type": "file/pdf"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

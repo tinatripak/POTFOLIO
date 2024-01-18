@@ -1,0 +1,180 @@
+@import "../../styles/variables.scss";
+
+.contact {
+      padding: 1rem 1rem;
+      padding-top: 7vh;
+      
+      .title{
+            font-family: $Linden;
+            font-size: 45px;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 7vh;
+            margin-bottom: 5vh;
+            font-family: $IslandMoments;
+
+            @include breakpoint(bigScreen) {
+                  font-family: $IslandMoments;
+            }
+      }
+
+      .content{
+            display: flex;
+            justify-content: space-around;
+            font-family: $Junge;
+            margin-bottom: 4vh;
+
+            @include breakpoint(smallScreen) {
+                  display: block;
+            }
+
+            .info{
+                  display: grid;
+                  grid-template-columns: repeat(6, 75px);
+                  grid-template-rows: repeat(6, 75px);
+
+                  @include breakpoint(smallScreen) {
+                        grid-template-columns: repeat(6, 120px);
+                        grid-template-rows: repeat(6, 120px);
+                  display: block;
+                  width: 80%;
+                  margin: 0 auto;
+
+                  }
+
+                  .getInTouch{
+                        border:1px solid $black;
+                        background-color: $white;
+                        border-bottom-left-radius: $blockBorderRadius;
+                        border-bottom-right-radius: $blockBorderRadius;
+                        padding: 1rem 1rem;
+
+                        @include breakpoint(smallScreen) {
+                              font-size: 20px;
+                              margin-bottom: 5vh;
+                        padding: 0.5rem 0.5rem;
+
+                        }
+
+                        grid-column-start: 1;
+                        grid-column-end: 4;
+                        grid-row-start: 1;
+                        grid-row-end: 3;
+
+                        img{
+                              width: 50px;
+                              border-radius: 6px;
+                        }
+
+                        .emailAddress{
+                              font-size: 13px;
+
+                              @include breakpoint(smallScreen) {
+                                    margin-top: 2vh;
+                                    margin-bottom: 2vh;
+                                    font-size: 16px;
+                              }
+                        }
+                        .myEmail{
+                              margin-top: 1vh;
+                              margin-bottom: 1vh;
+                              font-size: 13px;
+                              text-decoration: underline;
+                              text-align: right;
+
+                              @include breakpoint(smallScreen) {
+                                    margin-top: 3vh;
+                                    margin-bottom: 2vh;
+                                    font-size: 16px;
+                              }
+            
+                        }
+                        .icons{
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              gap:30px;
+                        }
+                        
+                  }
+                  .location{
+                        border:1px solid $black;
+                        background-color: $white;
+                        border-top-left-radius: $blockBorderRadius;
+                        border-top-right-radius: $blockBorderRadius;
+                        padding: 1.5rem 1.5rem;
+
+                        @include breakpoint(smallScreen) {
+                              font-size: 20px;
+                              padding: 1rem 1rem;
+                        }
+
+                        grid-column-start: 3;
+                        grid-column-end: 6;
+                        grid-row-start: 4;
+                        grid-row-end: 6;
+
+                        .currentlyLocation{
+                              font-size: 13px;
+                              margin-top: 3vh;
+
+                              @include breakpoint(smallScreen) {
+                                    margin-top: 4vh;
+                                    margin-bottom: 2vh;
+                                    font-size: 16px;
+                              }
+                        }
+                        .myLocation{
+                              margin-top: 3vh;
+                              margin-bottom: 2vh;
+                              font-size: 13px;
+                              text-decoration: underline;
+                              text-align: right;
+
+                              @include breakpoint(smallScreen) {
+                                    margin-top: 5vh;
+                                    margin-bottom: 4vh;
+                                    font-size: 16px;
+                              }
+                        }
+                  }
+            }
+            .resume{
+                  display: block;
+                  img{
+                        width: 25vw;
+
+                        @include breakpoint(bigScreen) {
+                              width: 40vw;
+                        }
+
+                        @include breakpoint(smallScreen) {
+                              display: flex;
+                              width:  80%;
+                              margin: 0 auto;
+                              margin-top: 4vh;
+                        }
+                  }
+                  a{
+                        color:$black;
+                        text-decoration: none;
+                        width: 200px;
+                        height: 60px;
+                        background-color: transparent;
+                        border: 1px solid $black;
+                        border-radius: $buttonBorderRadius;
+                        font-size: 14px;
+                        font-family: $Julius;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 2vh;
+                        &:hover{
+                              font-weight: bold;
+                        }
+                  }
+            }
+      }
+}

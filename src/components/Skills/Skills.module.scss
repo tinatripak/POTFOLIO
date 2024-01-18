@@ -1,0 +1,291 @@
+@import "../../styles/variables.scss";
+
+.skills {
+      padding-top: 12vh;
+
+      @include breakpoint(smallScreen) {
+            padding-top: 9vh;
+      }
+
+      .heading{
+            display: none;
+            font-family:$Julius;
+            padding-bottom: 4vh;
+            text-align: center;
+            
+            @include breakpoint(bigScreen) {
+                  display: block;
+                  font-family: $IslandMoments;
+                  font-size: 35px;
+                  text-transform: uppercase;
+            }
+      }
+      
+      .content{
+            display: grid;
+            grid-template-columns: repeat(17, 80px);
+            grid-template-rows: repeat(10, 80px);
+            width: min-content;
+            margin: 0 auto;
+
+            @include breakpoint(bigScreen) {
+                  display: grid;
+                  grid-template-columns: repeat(17, 45px);
+                  grid-template-rows: repeat(10, 45px);
+            }
+
+            @include breakpoint(smallScreen) {
+                  display: grid;
+                  grid-template-columns: repeat(10, 30px);
+                  grid-template-rows: repeat(10, 30px);
+            }
+
+      
+            img{
+                  width: 80px;
+                  height: 80px;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        width: 60px;
+                        height: 60px;
+                  }
+                  @include breakpoint(bigScreen) {
+                        width: 45px;
+                        height: 45px;
+                  }
+            }
+      
+            .orangeIcon{
+                  grid-column-start: 2;
+                  grid-column-end: 2;
+                  grid-row-start: 9;
+                  grid-row-end: 9;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $orange-circle;
+                  border-radius: 50%;
+      
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .purpleIcon{
+                  grid-column-start: 3;
+                  grid-column-end: 3;
+                  grid-row-start: 3;
+                  grid-row-end: 3;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $purple-circle;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .lightPinkIcon{
+                  grid-column-start: 9;
+                  grid-column-end: 9;
+                  grid-row-start: 1;
+                  grid-row-end: 1;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $light-pink-circle;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .darkPinkIcon{
+                  grid-column-start:11;
+                  grid-column-end: 11;
+                  grid-row-start: 4;
+                  grid-row-end: 4;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $dark-pink-circle;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .mongoIcon{
+                  grid-column-start:1;
+                  grid-column-end: 1;
+                  grid-row-start: 6;
+                  grid-row-end: 6;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:1;
+                        grid-column-end: 2;
+                        grid-row-start: 5;
+                        grid-row-end: 6;
+                  }
+            }
+            .tailwindIcon{
+                  grid-column-start:4;
+                  grid-column-end: 4;
+                  grid-row-start: 7;
+                  grid-row-end: 7;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:2;
+                        grid-column-end: 3;
+                        grid-row-start: 8;
+                        grid-row-end: 9;
+                  }
+            }
+            .basicIcon{
+                  grid-column-start:5;
+                  grid-column-end: 5;
+                  grid-row-start: 5;
+                  grid-row-end: 5;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:8;
+                        grid-column-end: 9;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                  }
+            }
+            .reactIcon{
+                  grid-column-start:6;
+                  grid-column-end: 6;
+                  grid-row-start: 2;
+                  grid-row-end: 2;
+
+                  @include breakpoint(smallScreen) {
+                        img{
+                              width: 180px;
+                              height: 180px;
+                        }
+
+                        grid-column-start:3;
+                        grid-column-end: 8;
+                        grid-row-start: 3;
+                        grid-row-end: 8;
+                  }
+            }
+            .scssIcon{
+                  grid-column-start:8;
+                  grid-column-end: 8;
+                  grid-row-start: 3;
+                  grid-row-end: 3;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:2;
+                        grid-column-end: 3;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                  }
+            }
+            .nodeIcon{
+                  grid-column-start:12;
+                  grid-column-end: 12;
+                  grid-row-start: 2;
+                  grid-row-end: 2;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:5;
+                        grid-column-end: 6;
+                        grid-row-start: 1;
+                        grid-row-end: 2;
+                  }
+            }
+            .postmanIcon{
+                  grid-column-start:13;
+                  grid-column-end: 13;
+                  grid-row-start: 5;
+                  grid-row-end: 5;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .expressIcon{
+                  grid-column-start:14;
+                  grid-column-end: 14;
+                  grid-row-start: 8;
+                  grid-row-end: 8;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:5;
+                        grid-column-end: 6;
+                        grid-row-start: 9;
+                        grid-row-end: 10;
+                  }
+            }
+            .figmaIcon{
+                  grid-column-start:16;
+                  grid-column-end: 16;
+                  grid-row-start: 4;
+                  grid-row-end: 4;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:9;
+                        grid-column-end: 10;
+                        grid-row-start: 5;
+                        grid-row-end: 6;
+                  }
+            }
+            .bootstrapIcon{
+                  grid-column-start:16;
+                  grid-column-end: 16;
+                  grid-row-start: 7;
+                  grid-row-end: 7;
+                  @include breakpoint(smallScreen) {
+                        grid-column-start:8;
+                        grid-column-end: 9;
+                        grid-row-start: 8;
+                        grid-row-end: 9;
+                  }
+            }
+            .pinkIcon{
+                  grid-column-start: 8;
+                  grid-column-end: 9;
+                  grid-row-start: 8;
+                  grid-row-end: 9;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $pink-circle;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+            .blueIcon{
+                  grid-column-start: 17;
+                  grid-column-end: 17;
+                  grid-row-start: 9;
+                  grid-row-end: 9;
+      
+                  width: 80px;
+                  height: 80px;
+                  background-color: $light-blue-circle;
+                  border-radius: 50%;
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+            }
+      
+            .girlIcon{
+                  grid-column-start: 6;
+                  grid-column-end: 12;
+                  grid-row-start: 5;
+                  grid-row-end: 10;
+      
+                  img{
+                        width: 480px;
+                        height: 430px;
+                  }
+                  @include breakpoint(smallScreen) {
+                        display: none;
+                  }
+
+                  @include breakpoint(bigScreen) {
+                        img{
+                              width: 300px;
+                              height: 250px;
+                        }
+                  }
+            }
+      }
+
+      
+}
