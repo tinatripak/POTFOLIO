@@ -82,3 +82,19 @@ $headerHeight: 100px;
       }
     }
     
+
+@keyframes skillsFadeIn {
+  to {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes aboutFadeIn {
+  to {
+    opacity: 1;
+  }
+}

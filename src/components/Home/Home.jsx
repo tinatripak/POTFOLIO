@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import classes from './Home.module.scss'
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
@@ -11,7 +12,14 @@ const Home = () => {
       <div className={classes.main}>
         <div className={classes.text}>
           <p className={classes.fullName}>Kristina Tripak</p>
-          <p className={classes.position}>Front-end Developer</p>
+          <Typewriter
+          className={classes.position}
+            options={{
+              strings: ['Front-end Developer'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </div>
         <div className={classes.photo}>
           <img src={process.env.PUBLIC_URL + '/images/myPhoto.png'} alt="Kristina Tripak" />

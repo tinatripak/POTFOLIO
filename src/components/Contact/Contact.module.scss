@@ -22,7 +22,7 @@
             display: flex;
             justify-content: space-around;
             font-family: $Junge;
-            margin-bottom: 4vh;
+            margin-bottom: 1vh;
 
             @include breakpoint(smallScreen) {
                   display: block;

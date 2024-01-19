@@ -33,6 +33,7 @@
                   text-decoration: none;
                   font-family: $Allison;
                   color: black;
+                  cursor: pointer;
             }
 
             .nav {
@@ -86,6 +87,7 @@
                               margin-right: calc(0.5rem + #{$spacing-md});
                         }
                         li {
+                              cursor: pointer;
                               &:not(:last-child) {
                                     margin-bottom: $spacing-md;
                                     @include breakpoint(md) {

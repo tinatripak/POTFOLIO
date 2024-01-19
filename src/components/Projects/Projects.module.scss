@@ -133,6 +133,10 @@
             font-size: 14px;
             font-family: $Julius;
             padding: 1rem 1rem;
+            &:hover{
+              font-weight: bolder;
+              transform: scale(1.1);
+            }
           }
           .demoButton {
             width: 120px;
@@ -144,6 +148,10 @@
             font-size: 14px;
             font-family: $Julius;
             text-align: center;
+            &:hover{
+              font-weight: bolder;
+              transform: scale(1.1);
+            }
           }
         }
       }
