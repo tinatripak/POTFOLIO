@@ -24,6 +24,15 @@ const Home = () => {
         <div className={classes.photo}>
           <img src={process.env.PUBLIC_URL + '/images/myPhoto.png'} alt="Kristina Tripak" />
         </div>
+
+        {/* <div className={classes.photo}>
+          <img src={process.env.PUBLIC_URL + '/images/photoWithMe.png'} alt="Kristina Tripak" className={classes.zIndex}/>
+          <div className={`${classes.backgroung} ${classes.zIndex}`}>
+            <div className={classes.firstRectangle}></div>
+            <div className={classes.secondRectangle}></div>
+            <div className={classes.thirdRectangle}></div>
+          </div>
+        </div> */}
       </div>
     </section>
   )

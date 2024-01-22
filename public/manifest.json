@@ -87,6 +87,10 @@
     {
       "src": "Kristina_Tripak_CV.pdf",
       "type": "file/pdf"
+    },
+    {
+      "src": "images/photoWithMe.png",
+      "type": "image/png"
     }
   ],
   "start_url": ".",

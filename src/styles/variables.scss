@@ -70,6 +70,11 @@ $headerHeight: 100px;
           @content;
         }
       }
+      @else if $point == mediumScreen {
+        @media (max-width: 54em) {
+          @content;
+        }
+      }
       @else if $point == smallScreen {
         @media (max-width: 48em) {
           @content;
