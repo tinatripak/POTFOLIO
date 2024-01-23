@@ -88,7 +88,7 @@ const About = () => {
             <p className={classes.title}>
             Practical React marathon
             </p>
-            <span className={classes.time}>Aug 2022 - Nov 2023</span>
+            <span className={classes.time}>Aug 2023 - Nov 2023</span>
           </div>
           <div className={`${classes.icon} ${isInViewport ? classes.fadeIn : ""}`}>
             <HiArrowLongDown size={40} />
