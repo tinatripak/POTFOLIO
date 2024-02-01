@@ -91,6 +91,15 @@
     {
       "src": "images/photoWithMe.png",
       "type": "image/png"
+    },
+
+    {
+      "src": "images/yoga.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/bookstore.png",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
