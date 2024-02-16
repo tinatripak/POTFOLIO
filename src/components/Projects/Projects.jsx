@@ -175,9 +175,10 @@ const Projects = () => {
 
         <div className={`${classes.project} ${classes.secondProject}`}>
           <p className={classes.description}>
-            This project was created using <span>Redux</span> and <span>React</span> libraries to be used
-            in my future yoga website with videos and yoga plans. <span>Redux</span> was used
-            to get information from the server and store it.
+            This project was created using <span>Redux</span> and{" "}
+            <span>React</span> libraries to be used in my future yoga website
+            with videos and yoga plans. <span>Redux</span> was used to get
+            information from the server and store it.
           </p>
           <div className={classes.photoBlock}>
             <img
@@ -201,6 +202,37 @@ const Projects = () => {
             </div>
           </div>
           <p className={classes.title}>Yoga Redux</p>
+        </div>
+
+        <div className={`${classes.project} ${classes.firstProject}`}>
+          <p className={classes.title}>Yoga Website</p>
+          <div className={classes.photoBlock}>
+            <img
+              src={process.env.PUBLIC_URL + "/images/yogawebsite.png"}
+              alt="Yoga website project"
+              className={classes.firstPhoto}
+            />
+            <div className={classes.buttons}>
+              <a
+                href="https://github.com/tinatripak/YogaWeb"
+                className={classes.liveCodeButton}
+              >
+                Live code
+              </a>
+              <a
+                href="https://yoga-namaste.vercel.app/"
+                className={classes.demoButton}
+              >
+                Demo
+              </a>
+            </div>
+          </div>
+          <p className={classes.description}>
+            The project is fullstack yoga website that uses the{" "}
+            <span>Redux</span> and <span>React</span> libraries to store plans
+            and videos and for all frontend. This client side is connected to
+            the backend, which is written in Node.js
+          </p>
         </div>
       </div>
     </section>

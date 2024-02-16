@@ -35,7 +35,6 @@
       "type": "image/png"
     },
 
-
     {
       "src": "images/basicIcon.png",
       "type": "image/png"
@@ -99,6 +98,10 @@
     },
     {
       "src": "images/bookstore.png",
+      "type": "image/png"
+    },
+    {
+      "src": "images/yogawebsite.png",
       "type": "image/png"
     }
   ],
