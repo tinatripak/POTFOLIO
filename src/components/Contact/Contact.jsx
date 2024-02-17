@@ -14,12 +14,18 @@ const Contact = () => {
             <p className={classes.emailAddress}>Email Address:</p>
             <p className={classes.myEmail}>tinatripak2002@gmail.com</p>
             <div className={classes.icons}>
-              <FaLinkedin size={50}/>
-              <img
-                src={process.env.PUBLIC_URL + "/images/gmailIcon.jpeg"}
-                alt="gmail icon"
-              />
-              <FaGithub size={45}/>
+              <a href="https://www.linkedin.com/in/kristina-tripak-967387222/">
+                <FaLinkedin size={50} />
+              </a>
+              <a href="mailto: tinatripak2002@gmail.com">
+                <img
+                  src={process.env.PUBLIC_URL + "/images/gmailIcon.jpeg"}
+                  alt="gmail icon"
+                />
+              </a>
+              <a href="https://github.com/tinatripak">
+                <FaGithub size={45} />
+              </a>
             </div>
           </div>
           <div className={classes.location}>
@@ -29,8 +35,17 @@ const Contact = () => {
           </div>
         </div>
         <div className={classes.resume}>
-          <img src={process.env.PUBLIC_URL + "/images/resume.png"} alt="Resume" /><br/>
-          <a href={process.env.PUBLIC_URL + "/Kristina_Tripak_CV.pdf"} download="Kristina_Tripak_CV.pdf">DOWNLOAD CV</a>
+          <img
+            src={process.env.PUBLIC_URL + "/images/resume.png"}
+            alt="Resume"
+          />
+          <br />
+          <a
+            href={process.env.PUBLIC_URL + "/Kristina_Tripak_CV.pdf"}
+            download="Kristina_Tripak_CV.pdf"
+          >
+            DOWNLOAD CV
+          </a>
         </div>
       </div>
     </section>
